@@ -14,7 +14,7 @@
 ### composer 安装
 
 ```
-composer require yexk/login-google-captcha
+composer require yexk/dcat-login-google-captcha
 ```
 
 ### 安装扩展
