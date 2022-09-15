@@ -1,5 +1,5 @@
 {
-    "name": "yexk/login-google-captcha",
+    "name": "yexk/dcat-login-google-captcha",
     "alias": "login captcha",
     "description": "Dcat-admin login Google Captcha extension.",
     "type": "library",
