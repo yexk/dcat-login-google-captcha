@@ -21,24 +21,11 @@ class ServiceProvider extends BaseServiceProvider
     use HasFormResponse;
 
     /**
-     * 路由过滤.
-     */
-    protected $exceptRoutes = [
-        'auth' => 'lake-login/captcha',
-        'permission' => 'lake-login/captcha',
-    ];
-
-    /**
      * {@inheritdoc}
      */
     public function init()
     {
         parent::init();
-
-        // 设置别名
-        if (! class_exists('LakeLoginCaptcha')) {
-            class_alias(__CLASS__, 'LakeLoginCaptcha');
-        }
 
         Admin::booting(function () {
             $except = admin_base_path('auth/login');
