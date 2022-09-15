@@ -1,0 +1,39 @@
+{
+    "name": "yexk/login-google-captcha",
+    "alias": "login captcha",
+    "description": "Dcat-admin login Google Captcha extension.",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "yexk",
+        "captcha",
+        "login-captcha",
+        "extension"
+    ],
+    "homepage": "https://github.com/yexk/dcat-login-google-captcha",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "yexk",
+            "email": "yexk@yexk.com",
+            "homepage": "https://github.com/yexk"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "dcat/laravel-admin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yexk\\LoginCaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Yexk\\LoginCaptcha\\ServiceProvider",
+        "laravel": {
+            "providers": [
+                "Yexk\\LoginCaptcha\\ServiceProvider"
+            ]
+        }
+    }
+}
